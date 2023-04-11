@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Quicksand:wght@500;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  background-color: #fff;
+}
+
+h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #D9D9D9;
+}
+
+.jumbotron {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/* Header */
+.navbar-container {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-container .nav-tittle {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-container .nav-tittle h1 {
+  font-family: 'Chewy', cursive;
+  font-size: 30px;
+  color: #3C2A21;
+}
+
+.navbar-container .nav-list ul {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+.navbar-container .nav-list li:hover a {
+  background-color: #CFB997;
+  color: #3C2A21;
+}
+
+.navbar-container .nav-list li a {
+  text-decoration: none;
+  color: #3C2A21;
+  font-size: medium;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  padding: .5rem 1.5rem;
+  border-radius: 999px;
+  transition: all .2s ease-in-out;
+}
+
+/* Landing Page */
+
+.landing-page {
+  display: flex;
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+  justify-content: space-between;
+}
+
+.landing-page .left-landingpage button{
+  margin-top: 2rem;
+}
+
+.landing-page .left-landingpage p {
+  margin-top: 16px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
+  color: #3C2A21;
+  }
+
+.landing-page .left-landingpage h1 {
+  font-family: 'Chewy', cursive;
+  font-size: 72px;
+  color: #3C2A21;
+}
+
+.landing-page .left-landingpage button {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  padding: 16px 36px;
+  border-radius: 99px;
+  background-color: #CFB997;
+  font-weight: bold;
+}
+
+.landing-page .left-landingpage button a{
+  text-decoration: none;
+  color: #3C2A21;
+}
+
+.landing-page .left-landingpage button:hover a{
+  color: #CFB997;
+  background-color: #3C2A21;
+}
+.landing-page .left-landingpage button:hover {
+  transform: scale(1.1);
+  color: #CFB997;
+  background-color: #3C2A21;
+}
+
+.landing-page .right-landingpage img {
+  margin: auto;
+  width: 330px;
+  border-radius: 50%;
+}
+
+.landing-page .right-landingpage img:hover{
+  transform: scale(1.15) ;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+}
+
+#content {
+  flex-basis: 75%;
+  border: 3px solid #D9D9D9;
+  border-radius: 16px;
+}
+
+aside {
+  flex-basis: 25%;
+  
+}
+
+/* Article Cosplay */
+
+article {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.article-header h2 {
+  margin: 0;
+  font-family: 'Chewy', cursive;
+  font-size: 50px;
+  text-align: center;
+  color: #3C2A21;
+}
+
+.article-header {
+  text-align: center;
+}
+
+.card-content p {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 20px;
+  color: #3C2A21;
+}
+
+.card {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+}
+
+article .card {
+  padding-top: 40px;
+}
+
+.card .card-content img {
+  height: 250px;
+  border-radius: 15%;
+}
+
+.card .card-content:hover {
+  transform: scale(1.15);
+}
+
+
+/* Aside */
+
+.profile header {
+  padding: 36px;
+  text-align: center;
+  color: #3C2A21;
+  border-radius: 5%;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+footer {
+  padding: 30px;
+  color: #3C2A21;
+  background-color: #CFB997;
+  text-align: center;
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    padding: 0;
+    
+    flex-direction: column;
+  }
+ 
+  main aside {
+    margin-bottom: 36px;
+    margin-top: 36px;
+  }
+
+  .landing-page {
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+
+  .right-landingpage {
+    order: -1;
+    margin: auto;
+  }
+  
+  .left-landingpage {
+    padding-left: 16px;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+  }
+
+  #content {
+    border: none;
+  }
+
+}
